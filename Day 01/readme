@@ -1,0 +1,113 @@
+
+##         JVM
+     OPERATING SYSTEM --> Window
+##      HARDWARE
+
+
+# Java Applications are platform independent but JVM not , so to run a java be have to first convert it a byte code which can only be run by jvm
+
+``` Java is WORA --> Write Once and Run Anywhere
+
+
+
+
+# ☕ Java Compilation & Execution Flow
+
+This document explains the basic workflow of how Java code is written, compiled, and executed using the JVM, JRE, and JDK.
+
+---
+
+## 🛠️ Step-by-Step Flow
+
+### 1. Write Java Code (`.java`)
+- Java programs are written in files with a `.java` extension.
+- Example:
+  ```java
+  public class Main {
+      public static void main(String[] args) {
+          System.out.println("Hello, World!");
+      }
+  }
+  ```
+
+---
+
+### 2. Compile Java Code
+- The Java compiler `javac` is used to compile `.java` files.
+- It converts source code into **bytecode**, stored in a `.class` file.
+
+---
+
+### 3. Run Bytecode with JVM
+- The `.class` file is executed by the **Java Virtual Machine (JVM)**.
+- JVM reads and interprets or compiles bytecode into native machine code.
+
+---
+
+## 🧱 Java Architecture Components
+
+### 🔹 JVM (Java Virtual Machine)
+- Executes `.class` files (bytecode).
+- Provides platform independence (Write Once, Run Anywhere).
+- Responsible for memory management, garbage collection, etc.
+
+### 🔹 JRE (Java Runtime Environment)
+- Includes:
+  - JVM
+  - Standard Java Libraries (`lib`)
+- Needed to **run** Java applications.
+
+### 🔹 JDK (Java Development Kit)
+- Includes:
+  - JRE (JVM + Libraries)
+  - Developer tools: `javac`, `java`, debugger, etc.
+- Required to **develop** Java applications.
+
+---
+
+## 🖥️ Java System Stack Overview
+
+```
+Java Code (.java)
+     ↓
+Compiler (javac)
+     ↓
+Bytecode (.class)
+     ↓
+JVM (Java Virtual Machine)
+     ↓
+JRE (Java Runtime Environment with lib)
+     ↓
+Operating System (e.g., Windows/Linux)
+     ↓
+Hardware (CPU, RAM, etc.)
+```
+
+---
+
+## 📝 Java Entry Point
+
+Every Java program starts with:
+
+```java
+public static void main(String[] args)
+```
+
+- `public`: Accessible from anywhere
+- `static`: No object needed to call
+- `void`: Returns nothing
+- `main`: Method name
+- `String[] args`: Accepts command-line arguments
+
+---
+
+## ✅ Summary
+
+- **.java → .class** via `javac`
+- **.class → executed** via JVM
+- **JVM is part of JRE**
+- **JRE is part of JDK**
+
+---
+
+
