@@ -1,0 +1,131 @@
+### 📘 Day 02: Variables & Data Types in Java
+
+---
+
+#### ✅ What I Learned Today
+
+* Basics of variables in Java
+* Types of variables
+* Java data types (primitive & non-primitive)
+* Type casting
+* Naming conventions
+* Constants (`final` keyword)
+
+---
+
+#### 🧠 Key Concepts
+
+##### 📦 Variables
+
+Variables are containers for storing data values.
+
+```java
+int age = 25;
+String name = "Anuj";
+```
+
+**Types of Variables:**
+
+* **Local Variable** – Defined inside methods.
+* **Instance Variable** – Defined inside class but outside methods.
+* **Static Variable** – Defined with `static` keyword.
+
+---
+
+##### 🔢 Data Types
+
+Java has two categories of data types:
+
+###### 1. **Primitive Data Types** (8 types)
+
+| Type    | Size    | Example                |
+| ------- | ------- | ---------------------- |
+| byte    | 1 byte  | `byte b = 10;`         |
+| short   | 2 bytes | `short s = 100;`       |
+| int     | 4 bytes | `int i = 1000;`        |
+| long    | 8 bytes | `long l = 10000L;`     |
+| float   | 4 bytes | `float f = 10.5f;`     |
+| double  | 8 bytes | `double d = 99.99;`    |
+| char    | 2 bytes | `char c = 'A';`        |
+| boolean | 1 bit   | `boolean flag = true;` |
+
+### Float Vs Decimal
+
+| Feature      | `float`             | `double`                        |
+| ------------ | ------------------- | ------------------------------- |
+| Size         | 4 bytes             | 8 bytes                         |
+| Precision    | 6–7 digits          | 15–16 digits                    |
+| Default Type | No (`f` needed)     | Yes (default for decimals)      |
+| Usage        | Less memory, faster | More precision, slightly slower |
+| Literal      | `float f = 3.14f;`  | `double d = 3.14;`              |
+
+
+###### 2. **Non-Primitive Data Types**
+
+* Strings
+* Arrays
+* Classes
+* Interfaces
+
+Example:
+
+```java
+String greeting = "Hello, Java!";
+int[] numbers = {1, 2, 3};
+```
+
+---
+
+##### 🔄 Type Casting
+
+###### ➕ Implicit Casting (small to large type)
+
+```java
+int x = 10;
+double y = x; // OK
+```
+
+###### ➖ Explicit Casting (large to small type)
+
+```java
+double a = 10.5;
+int b = (int) a; // Loss of data possible
+```
+
+---
+
+#### 📌 Java Naming Conventions
+
+* Use **camelCase** for variable names.
+* Start with a letter, `$`, or `_`.
+* Reserved words cannot be variable names.
+
+✅ Valid: `studentName`, `maxValue`, `_count`
+❌ Invalid: `int`, `class`, `void`
+
+---
+
+#### 🔒 Constants in Java
+
+Use `final` to make a variable constant (value cannot be changed):
+
+```java
+final double PI = 3.14159;
+```
+
+---
+
+#### 🛠️ Practice Task
+
+* Create variables of all primitive data types.
+* Try converting `int` to `double` and `double` to `int`.
+* Make a small program using `final`, `String`, and array.
+
+---
+
+#### 📚 Resources Used
+
+* Telusko Java Playlist (Day 02 video)
+* Oracle Java Docs
+
+---
