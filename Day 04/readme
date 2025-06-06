@@ -1,0 +1,109 @@
+### ✅ **Conditional Statements in Java**
+
+Conditional statements are used to make decisions in Java programs based on certain conditions.
+
+---
+
+## 🟩 **1. if Statement**
+
+Executes a block of code **only if** the condition is true.
+
+```java
+int age = 20;
+if (age >= 18) {
+    System.out.println("You are eligible to vote.");
+}
+```
+
+---
+
+## 🟨 **2. if-else Statement**
+
+Executes one block if the condition is true, another block if false.
+
+```java
+int age = 16;
+if (age >= 18) {
+    System.out.println("You can vote.");
+} else {
+    System.out.println("You cannot vote.");
+}
+```
+
+---
+
+## 🟦 **3. if-else if-else Ladder**
+
+Used when you need to test multiple conditions.
+
+```java
+int marks = 85;
+
+if (marks >= 90) {
+    System.out.println("Grade A");
+} else if (marks >= 75) {
+    System.out.println("Grade B");
+} else if (marks >= 60) {
+    System.out.println("Grade C");
+} else {
+    System.out.println("Fail");
+}
+```
+
+---
+
+## 🟪 **4. Nested if Statement**
+
+An `if` statement inside another `if` statement.
+
+```java
+int age = 25;
+boolean hasID = true;
+
+if (age >= 18) {
+    if (hasID) {
+        System.out.println("Entry allowed.");
+    } else {
+        System.out.println("ID required.");
+    }
+}
+```
+
+---
+
+## 🟫 **5. switch Statement**
+
+Efficient for checking a variable against multiple constant values.
+
+```java
+int day = 3;
+switch (day) {
+    case 1:
+        System.out.println("Monday");
+        break;
+    case 2:
+        System.out.println("Tuesday");
+        break;
+    case 3:
+        System.out.println("Wednesday");
+        break;
+    default:
+        System.out.println("Invalid day");
+}
+```
+
+---
+
+### 🧠 Summary Table:
+
+| Statement Type    | Use Case                                     |
+| ----------------- | -------------------------------------------- |
+| `if`              | When one condition is checked                |
+| `if-else`         | When choosing between two options            |
+| `if-else if-else` | When checking multiple conditions            |
+| `nested if`       | When one condition depends on another        |
+| `switch`          | When comparing one variable with many values |
+
+---
+
+

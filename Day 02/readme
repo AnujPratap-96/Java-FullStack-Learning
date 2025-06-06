@@ -129,3 +129,100 @@ final double PI = 3.14159;
 * Oracle Java Docs
 
 ---
+
+### ✅ **Type Casting and Type Promotion in Java**
+
+---
+
+### 🟦 **1. Type Casting in Java**
+
+**Type Casting** refers to converting a variable of one data type into another.
+
+#### 🔹 **Types of Type Casting:**
+
+#### ➤ A. **Widening Casting (Implicit Type Casting)**
+
+* Automatically done by the compiler.
+* Converts a smaller data type to a larger one.
+* **No data loss**
+
+**Example:**
+
+```java
+int a = 10;
+double b = a;  // int to double (automatic)
+System.out.println(b); // Output: 10.0
+```
+
+**Order of widening:**
+
+```
+byte → short → int → long → float → double
+```
+
+---
+
+#### ➤ B. **Narrowing Casting (Explicit Type Casting)**
+
+* Must be done manually.
+* Converts a larger data type to a smaller one.
+* **Possible data loss**
+
+**Example:**
+
+```java
+double x = 10.5;
+int y = (int) x; // double to int (explicit cast)
+System.out.println(y); // Output: 10
+```
+
+---
+
+### 🟦 **2. Type Promotion in Java**
+
+**Type Promotion** occurs when Java automatically promotes smaller data types during **expressions or operations**.
+
+#### 🔹 **Rules of Type Promotion:**
+
+1. **byte, short, and char** are promoted to **int** when used in expressions.
+2. If one operand is of a larger type (e.g., `long`, `float`, or `double`), the whole expression is promoted to that type.
+3. Mixing types causes promotion to the largest type in the expression.
+
+#### 🔹 **Example 1: Byte Promotion**
+
+```java
+byte a = 10;
+byte b = 20;
+int c = a + b; // Both a and b are promoted to int
+```
+
+Here, even though `a` and `b` are bytes, the result of `a + b` is `int`.
+
+---
+
+#### 🔹 **Example 2: Mixed Data Type Promotion**
+
+```java
+int a = 10;
+double b = 5.5;
+double result = a + b; // int is promoted to double
+System.out.println(result); // Output: 15.5
+```
+
+---
+
+### 🟨 Summary Table:
+
+| Feature           | Widening (Implicit) | Narrowing (Explicit) | Type Promotion |
+| ----------------- | ------------------- | -------------------- | -------------- |
+| Done by Compiler  | ✅ Yes               | ❌ No                 | ✅ Yes          |
+| Risk of Data Loss | ❌ No                | ✅ Yes                | ❌ No           |
+| Syntax Needed     | ❌ No                | ✅ Yes                | ❌ No           |
+
+---
+
+### 🧠 **Tip:**
+
+Whenever you mix types in Java, think **"small to big"**: Java promotes the smaller types to match the largest one involved in the expression.
+
+

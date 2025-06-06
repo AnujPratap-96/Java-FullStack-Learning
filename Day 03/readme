@@ -1,0 +1,140 @@
+## ✅ **Java Operators**
+
+Java provides a rich set of operators to manipulate variables. They are categorized as:
+
+---
+
+### 🔹 1. **Arithmetic Operators**
+
+Used for basic mathematical operations.
+
+| Operator | Description         | Example |
+| -------- | ------------------- | ------- |
+| `+`      | Addition            | `a + b` |
+| `-`      | Subtraction         | `a - b` |
+| `*`      | Multiplication      | `a * b` |
+| `/`      | Division            | `a / b` |
+| `%`      | Modulus (remainder) | `a % b` |
+
+**Example:**
+
+```java
+int a = 10, b = 3;
+System.out.println(a + b); // 13
+System.out.println(a % b); // 1
+```
+
+---
+
+### 🔹 2. **Assignment Operators**
+
+Used to assign values.
+
+| Operator | Example  | Meaning        |
+| -------- | -------- | -------------- |
+| `=`      | `a = 10` | Assign 10 to a |
+| `+=`     | `a += 2` | `a = a + 2`    |
+| `-=`     | `a -= 2` | `a = a - 2`    |
+| `*=`     | `a *= 2` | `a = a * 2`    |
+| `/=`     | `a /= 2` | `a = a / 2`    |
+| `%=`     | `a %= 2` | `a = a % 2`    |
+
+---
+
+### 🔹 3. **Relational / Comparison Operators**
+
+Used to compare two values. Returns `true` or `false`.
+
+| Operator | Description      | Example  |
+| -------- | ---------------- | -------- |
+| `==`     | Equal to         | `a == b` |
+| `!=`     | Not equal to     | `a != b` |
+| `>`      | Greater than     | `a > b`  |
+| `<`      | Less than        | `a < b`  |
+| `>=`     | Greater or equal | `a >= b` |
+| `<=`     | Less or equal    | `a <= b` |
+
+---
+
+### 🔹 4. **Logical Operators**
+
+Used to combine multiple conditions.
+
+| Operator | Description | Example           |            |          |   |         |
+| -------- | ----------- | ----------------- | ---------- | -------- | - | ------- |
+| `&&`     | Logical AND | `a > 10 && b < 5` |            |          |   |         |
+| \`       |             | \`                | Logical OR | \`a > 10 |   | b < 5\` |
+| `!`      | Logical NOT | `!(a > b)`        |            |          |   |         |
+
+---
+
+### 🔹 5. **Unary Operators**
+
+Operate on a single operand.
+
+| Operator | Description | Example        |
+| -------- | ----------- | -------------- |
+| `+`      | Unary plus  | `+a`           |
+| `-`      | Unary minus | `-a`           |
+| `++`     | Increment   | `a++` or `++a` |
+| `--`     | Decrement   | `a--` or `--a` |
+| `!`      | Logical NOT | `!true`        |
+
+---
+
+### 🔹 6. **Bitwise Operators**
+
+Used to perform bit-level operations.
+
+| Operator | Description           | Example    |     |     |
+| -------- | --------------------- | ---------- | --- | --- |
+| `&`      | Bitwise AND           | `a & b`    |     |     |
+| \`       | \`                    | Bitwise OR | \`a | b\` |
+| `^`      | Bitwise XOR           | `a ^ b`    |     |     |
+| `~`      | Bitwise NOT           | `~a`       |     |     |
+| `<<`     | Left shift            | `a << 2`   |     |     |
+| `>>`     | Right shift           | `a >> 2`   |     |     |
+| `>>>`    | Zero fill right shift | `a >>> 2`  |     |     |
+
+---
+
+### 🔹 7. **Ternary Operator**
+
+A shorthand for `if-else`.
+
+```java
+variable = (condition) ? value_if_true : value_if_false;
+```
+
+**Example:**
+
+```java
+int a = 10, b = 20;
+int max = (a > b) ? a : b; // max = 20
+```
+
+---
+
+### 🔹 8. **Instanceof Operator**
+
+Checks if an object is an instance of a specific class or subclass.
+
+```java
+String s = "hello";
+System.out.println(s instanceof String); // true
+```
+
+---
+
+### 🔹 9. **Type Cast Operator**
+
+Used to convert data types manually.
+
+```java
+double x = 10.5;
+int y = (int) x; // narrowing conversion
+```
+
+---
+
+Let me know if you'd like a PDF/table/chart for this!

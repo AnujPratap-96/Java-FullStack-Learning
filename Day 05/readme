@@ -1,0 +1,98 @@
+### 🔁 **Loops in Java**
+
+Loops are used to execute a block of code **repeatedly** as long as a condition is true.
+
+---
+
+## ✅ **Types of Loops in Java**
+
+---
+
+### 🟢 1. **for Loop**
+
+Used when the number of iterations is known.
+
+```java
+for (int i = 1; i <= 5; i++) {
+    System.out.println("i = " + i);
+}
+```
+
+---
+
+### 🟡 2. **while Loop**
+
+Used when the number of iterations is unknown, but depends on a condition.
+
+```java
+int i = 1;
+while (i <= 5) {
+    System.out.println("i = " + i);
+    i++;
+}
+```
+
+---
+
+### 🔵 3. **do-while Loop**
+
+Executes the loop body **at least once**, then checks the condition.
+
+```java
+int i = 1;
+do {
+    System.out.println("i = " + i);
+    i++;
+} while (i <= 5);
+```
+
+---
+
+### 🟣 4. **Enhanced for Loop (for-each loop)**
+
+Used to iterate over arrays or collections.
+
+```java
+int[] arr = {10, 20, 30, 40};
+for (int num : arr) {
+    System.out.println("Element: " + num);
+}
+```
+
+---
+
+### 🔴 5. **Break and Continue (Used Inside Loops)**
+
+#### 🔹 break – Exits the loop completely.
+
+```java
+for (int i = 1; i <= 5; i++) {
+    if (i == 3) break;
+    System.out.println(i);
+}
+// Output: 1 2
+```
+
+#### 🔹 continue – Skips the current iteration and continues with the next.
+
+```java
+for (int i = 1; i <= 5; i++) {
+    if (i == 3) continue;
+    System.out.println(i);
+}
+// Output: 1 2 4 5
+```
+
+---
+
+## 🧠 **Summary Table**
+
+| Loop Type  | Entry/Exit | Condition Checked | Use Case                       |
+| ---------- | ---------- | ----------------- | ------------------------------ |
+| `for`      | Entry      | Before execution  | Known number of repetitions    |
+| `while`    | Entry      | Before execution  | Unknown repetitions            |
+| `do-while` | Exit       | After execution   | At least once execution needed |
+| `for-each` | Entry      | N/A (Iterable)    | Iterating over arrays/lists    |
+
+---
+
